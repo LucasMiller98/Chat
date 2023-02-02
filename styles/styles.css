@@ -1,0 +1,138 @@
+#user-info img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#messages {
+  overflow-y: scroll;
+  padding-bottom: 1.4rem;
+}
+
+#messages::-webkit-scrollbar {
+  display: none;
+}
+
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#user-status .status {
+  color: #00b37e;
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
+  margin-top: .4rem;
+  font-size: 1.2rem;
+}
+
+#last-seen {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 2.6rem;
+  text-align: center;
+}
+
+#user-status .status::before {
+  content: '';
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  background-color: #00b37e;
+  border-radius: 50%;
+}
+
+#app {
+  padding: 2.4rem 3.2rem;
+  height: 100vh;
+  width: 100vw;
+
+  max-width: 880px;
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.messages {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.message.you {
+  margin-left: auto;
+}
+
+.message:not(.you) {
+  width: 60vw;
+}
+
+.message .body {
+  margin-top: 1rem;
+  
+  width: fit-content;
+  
+  background-color: #636bbc;
+  padding: 1.4rem;
+  border-radius: 0 .8rem .8rem .8rem;
+}
+
+.message.you .body {
+  background-color: #07847e;
+  border-radius: .8rem .8rem 0 .8rem;
+}
+
+.message.you .top {
+  text-align: right;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 999rem;
+  padding: 1.4rem 2.4rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.input-wrapper button i {
+  color: #e1e1e6;
+  font-size: 2.4rem;
+}
+
+.input-wrapper input {
+  flex: 1;
+  color: #e1e1e6;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px solid #fff;
+}
+
+.input-wrapper input::placeholder {
+  color: #e1e1e6;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+input, button {
+  background-color: transparent;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}

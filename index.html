@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./global/styles.css">
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <script src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+  <div id="app">
+
+    <div id="top">
+
+      <div id="user-info">
+        <img 
+          src='./img/profile.jpg' 
+          alt="Me"
+        > 
+        
+        <div id="user-status">
+          <strong>Lucas Miller</strong>
+          <div class="status">
+            Online
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="close-chat">
+        <i class="ph-x"></i>
+      </div>
+    </div>
+
+    <div id="messages">
+      <div id="last-seen">Hoje 11:30</div>
+
+      <div class="messages">
+        <div class="message">
+          <div class="top">Lucas - 11:30</div>
+          <div class="body">Tive uma ideia incrível para um projeto!</div>
+        </div>
+
+        <div class="message you">
+          <div class="top">Você - 11:32</div>
+          <div class="body">Sério? Me conta mais.</div>
+        </div>
+
+        <div class="message">
+          <div class="top">Lucas - 11:34</div>
+          <div class="body">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</div>
+        </div>
+
+        <div class="message you">
+          <div class="top">Você - 11:36</div>
+          <div class="body"><strong>#boraCodar!</strong></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="bottom">
+      <form>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Digite sua mensagem">
+          <button>
+            <i class="ph-paper-plane-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>
